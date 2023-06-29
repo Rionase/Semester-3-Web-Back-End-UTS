@@ -1,0 +1,60 @@
+Nama Tim : Eight Eyes
+Anggota 1 : 211111053 / Nicholas Saputra Liemawan  
+
+Anggota 2 : 211110289 / Cheris Carnesia Yuvelim
+
+
+
+Nama Aplikasi : Royal Trinité Catering
+
+
+
+Tema/ Topik : 
+Menyediakan jasa catering makanan dengan menu yang berbeda-beda untuk tiap hari dan tiap waktu makan.
+
+
+Instruki :
+1. Buat database MySQL yang bernama "projekuts", lalu import file projekuts.sql .
+2. Koneksikan ke internet, karena ada menggunakan template HTML CSS yg meload resource luar.
+3. Jangan lupa npm install pada terminal VS Code.
+4. Webserver akan dijalankan pada port 3000.
+5. Untuk memulai/ mengakses web, maka dapat diketik : "localhost:3000/" atau "localhost:3000/Home" .
+
+
+
+Deskripsi :
+
+1. Terdapat 4 jenis page, yaitu : Home, Reservation, MyOrders dan About-Us.
+
+2. Home dan About-Us merupakan page yang bersifat static dan tidak diharuskan untuk log-in untuk mengaksesnya.
+
+3. Reservation dan MyOrders merupakan page yang bersifat dinamis dan mengharuskan customer log-in terlebih dahulu.
+
+4. Log-In/ Sign-Up page :
+   - Untuk Log-In akan dilakukan verifikasi username dan password yang terdapat pada database.
+   - Untuk Sign-Up, username tiap customer harus UNIQUE, sehingga webserver akan mengembalikan respon "username sudah terdaftar"
+     apabila ditemukan username yang sama pada database.
+   - Data customer dapat dilihat pada tabel "userdata" pada database.
+
+5. Setelah Log-In/ Sign-Up, maka page Home, Reservation, MyOrders dan About-Us akan menampilkan username dan button Log-Out.
+
+6. Reservation Page :
+   - Hari(Tanggal dari calender) dan Waktu Makan yang dipilih akan menentukan menu makanan yang ditampilkan dan data-nya diambil dari database.
+   - Hari(Tanggal dari calender) dan Waktu Makan yang dipilih juga akan mempengaruhi pilihan pada input box di bawah.
+   - Customer hanya bisa melakukan reservasi untuk besok sampai 1 minggu kedepan ( tidak dapat pada hari ini dan hari lain melakukan reservasi).
+   - Tanggal pada calender hanya akan menampilkan rentang waktu 2 minggu dan akan menyesuaikan dengan tanggal lokal device.
+   - Apabila ingin melakukan reservasi, maka diharuskan untuk megisi semua inputan terlebih dahulu. 
+   - Data reservasi akan dikirim ke webserver dan dimasukkan pada tabel "reservation" yang ada di database.
+
+7. MyOrders Page :
+    - Page MyOrders akan menampilkan history pemesanan dari tiap customer yang terurut dari pemesanan paling baru sampai ke pemesanan paling lama.
+    - History pemesanan juga akan menampilkan data menu makanan secara singkat yang diambil dari database.
+    - Apabila tanggal reservasi telah lewat (pada masa lalu), maka text-nya akan berwarna abu-abu.
+    - Apabila reservasi untuk hari ini dan masa mendatang, maka text-nya akan berwarna putih.
+    - Apabila customer tidak pernah melakukan reservasi, maka akan menampilkan "No Orders Found".
+
+8. Apabila terdapat kesalahan pemasukkan URL, maka akan meload "Page Not Found".
+
+9. Apabila tidak ingin menggunakan tanggal local/ ingin menentukan tanggal-nya sendiri, maka cek :
+   - public/JS/Reservation.js            baris ke-6
+   - public/JS/MyOrders.js		 baris ke-42

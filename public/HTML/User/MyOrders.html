@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>My Orders</title>
+        <link rel="stylesheet" type="text/css" href="/CSS/User/MyOrders.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Signika:wght@600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon&family=Oswald:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    </head>
+    <body id="body">
+      <ul class="nav justify-content Main1">
+          <img src="/Image/logo.png" id="logo">
+          <div class="nav-link logoname">Royal Trinité</div>
+          <li class="nav-item">
+            <a class="nav-link navtext" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link navtext" href="#">Reservation</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link navtext" href="#">My Orders</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link navtext" href="#">About Us</a>
+          </li>
+          
+          <li class="nav-item username">
+            <label class="nav-link usernamesub">Username</label>
+          </li>
+
+          <a id="button1" href="/Home" type="button">Log Out</a>
+
+      </ul>
+      <br><br><br>
+
+      <div id="NoOrders">
+        <img src="/Image/MyOrders/NoOrdersFound.png" width="400" id="NoOrdersImage">
+        <div id="Title">No Orders Found</div>
+        <div>Look's like you haven't made your first order. Click <a id="Here" href="">here</a> to make your first reservation.</div>
+      </div>
+      
+      <ul class="timeline"></ul>  
+
+      <script src="/JS/MyOrders.js"></script>
+      
+    </body>
+      
+</html>

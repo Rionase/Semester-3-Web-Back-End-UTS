@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Reservation</title>
+        <link rel="stylesheet" type="text/css" href="/CSS/User/Reservation.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon&family=Oswald:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon&family=Oswald:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    </head>
+    <body id="body">
+      <ul class="nav justify-content Main1">
+          <img src="/Image/logo.png" id="logo">
+          <div class="nav-link logoname">Royal Trinité</div>
+          <li class="nav-item">
+            <a class="nav-link navtext" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link navtext" href="#">Reservation</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link navtext" href="#">My Orders</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link navtext" href="#">About Us</a>
+          </li>
+          
+          <li class="nav-item username">
+            <label class="nav-link usernamesub">Username</label>
+          </li>
+          <a id="button1" href="/Home" type="button">Log Out</a>
+
+      </ul>
+
+      <form action="/Reservation" method="post" id="Form">
+        
+
+
+        
+
+        <input type="text" value="hidden_username_for_submit" style="display: none;" name="Username" id="hidden_username">
+        <input type="text" value="hidden_password_for_submit" style="display: none;" name="Password" id="hidden_password">
+
+
+
+
+
+        <div id="Main2">
+          <p id="judul">MAKE A RESERVATION</p>
+          <div id="below_judul1"></div>
+          <div id="below_judul2"></div>
+
+          <div id="Main3">
+            <img src="/Image/Reservation/Reservation Side Image.png" alt="" id="SideImage">
+            <div id="right">
+  
+                <div class="question">
+                  <input type="text" class="box" name="ReservationName" required/>
+                  <label class="question_title">Reservation on behalf of</label>
+                </div>
+  
+                <div class="question">
+                  <input type="tel" class="box" name="ActivePhoneNumber" required/>
+                  <label class="question_title">Active Phone Number</label>
+                </div>
+  
+                <div class="question">
+                  <input type="text" class="box" name="Address" required/>
+                  <label class="question_title">Address</label>
+                </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+        <div id="Main4">
+          <div id="Sub1">
+            <label id="SelectedDate"> HARI, DD MONTH YEAR </label>
+          </div>
+          <div id="Sub2">
+            <div class="day">Monday</div>
+            <div class="day">Tuesday</div>
+            <div class="day">Wednesday</div>
+            <div class="day">Thursday</div>
+            <div class="day">Friday</div>
+            <div class="day">Saturday</div>
+            <div class="day">Sunday</div>
+          </div>
+          <div id="Sub3">
+            <div> <button type="button" class="button2 date"> dd/mm/yyyy </button> </div>
+            <div> <button type="button" class="button2 date"> dd/mm/yyyy </button> </div>
+            <div> <button type="button" class="button2 date"> dd/mm/yyyy </button> </div>
+            <div> <button type="button" class="button2 date"> dd/mm/yyyy </button> </div>
+            <div> <button type="button" class="button2 date"> dd/mm/yyyy </button> </div>
+            <div> <button type="button" class="button2 date"> dd/mm/yyyy </button> </div>
+            <div> <button type="button" class="button2 date"> dd/mm/yyyy </button> </div>
+          </div>
+          <div id="Sub4">
+            <div> <button type="button" class="button2 date"> dd/mm/yyyy </button> </div>
+            <div> <button type="button" class="button2 date"> dd/mm/yyyy </button> </div>
+            <div> <button type="button" class="button2 date"> dd/mm/yyyy </button> </div>
+            <div> <button type="button" class="button2 date"> dd/mm/yyyy </button> </div>
+            <div> <button type="button" class="button2 date"> dd/mm/yyyy </button> </div>
+            <div> <button type="button" class="button2 date"> dd/mm/yyyy </button> </div>
+            <div> <button type="button" class="button2 date"> dd/mm/yyyy </button> </div>
+          </div>
+        </div>
+
+
+
+
+
+        <div id="Main5">
+          <button type="button" class="button3"> Breakfast </button>
+          <button type="button" class="button3"> Lunch </button>
+          <button type="button" class="button3"> Dinner </button>
+        </div>
+
+
+
+
+
+        <div id="Main6">
+          <div class="Main7">
+            <img class="Menu" src="">
+            <div class="Main8">
+              <div class="FoodName">Food 1</div>
+              <div class="Description">Lumpia are made of thin paper-like or crepe-like pastry skin called "lumpia wrapper" enveloping savory or sweet fillings.</div>
+            </div>
+          </div>
+  
+          <div class="Main7">
+            <img class="Menu" src="">
+            <div class="Main8">
+              <div class="FoodName">Food 2</div>
+              <div class="Description">Capcay is the Hokkien-derived term for a popular Chinese Indonesian and Peranakan stir-fried vegetable dish that originates from Fujian cuisine.</div>
+            </div>
+          </div>
+  
+          <div class="Main7">
+            <img class="Menu" src="">
+            <div class="Main8">
+              <div class="FoodName">Food 3</div>
+              <div class="Description">A Chinese stir-fry dish made with juicy pieces of pork tenderloin, bell peppers, onion, and pineapple.</div>
+            </div>
+          </div>
+  
+          <div class="Main7">
+            <img class="Menu" src="">
+            <div class="Main8">
+              <div class="FoodName">Food 4</div>
+              <div class="Description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo illo beatae dolore laboriosam iusto eaque, amet laudantium sit.</div>
+            </div>
+          </div>
+  
+          <div class="Main7">
+            <img class="Menu" src="">
+            <div class="Main8">
+              <div class="FoodName">Food 5</div>
+              <div class="Description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo illo beatae dolore laboriosam iusto eaque, amet laudantium sit,</div>
+            </div>
+          </div>
+  
+          <div class="Main7">
+            <img class="Menu" src="">
+            <div class="Main8">
+              <div class="FoodName">Food 6</div>
+              <div class="Description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo illo beatae dolore laboriosam iusto eaque, amet laudantium sit,</div>
+            </div>
+          </div>
+  
+        </div>
+
+
+
+
+
+        <div class="Main9">
+
+          <div class="Main10">
+            <label class="InputFormTitle">RESERVATION DATE</label>
+            <br>
+            <input type="text" class="InputForm" name="Date" size="26" value="Saturday, November 12, 2022" readonly>
+          </div>
+
+          <div class="Main10">
+            <label class="InputFormTitle">MEAL PLANS</label>
+            <br>
+            <input type="text" class="InputForm" name="MealPlans" size="12" value="Breakfast" readonly>
+          </div>
+
+          <div class="Main10">
+            <label class="InputFormTitle">ORDERS AMOUNT</label>
+            <br>
+            <input type="number" class="InputForm" name="OrdersAmount" min="1" value="1" required>
+          </div>
+
+          <div class="Main10">
+            <label class="InputFormTitle">Price</label>
+            <br>
+            <input type="text" class="InputForm" name="Price" size="20" value="$" readonly>
+          </div>
+
+        </div>
+        
+
+
+
+        <div id="Main11">
+          <button class="button4" type="submit">SUBMIT</button>
+        </div>
+
+
+      </form>
+      
+
+      <script src="/JS/Reservation.js"></script>
+
+      
+</html>
